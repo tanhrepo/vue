@@ -6,6 +6,27 @@
 		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
+		<div id="app-1">
+			{{message}}{{info}}
+			<ul>
+				<li v-for="item in list">{{item}}</li>
+				<li v-for="item in list">{{list}}</li>
+				<li v-for="item in list">{{list[0]}}</li>
+				<li>{{list[0]}}</li>
+				<li>{{list[0,1,2]}}</li>
+				<li>{{list[2]}}</li>
+				<li>{{list[1]}}</li>
+			</ul>
+			<br>
+			<h2>当前计数:{{counter}}</h2>
+			<button type="button" v-on:click="counter++">+</button>
+			<button type="button" @click="counter--">-</button>
+			<button type="button" @click="add()">+</button>
+			<button type="button" v-on:click="sub()">-</button>
+			<!-- @click=""是v-on:click=""的”语法糖，两者是一样的“简写” -->
+		</div>
 		
+		
+		<script src="js/v1.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

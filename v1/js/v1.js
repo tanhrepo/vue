@@ -27,5 +27,17 @@ const app1 = new Vue({
 			console.log("sub countion");
 			this.counter--;
 		}
+	},
+	// 生命周期:事物诞生到消亡的整个过程
+	created:function(){
+		console.log('created')
+	},
+	mounted:function(){
+		console.log('mounted')
 	}
 })
+
+// 三秒后把message里面的值修改
+setTimeout(function(){
+	app1.message = "aini";
+},3000);

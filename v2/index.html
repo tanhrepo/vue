@@ -8,21 +8,23 @@
 	<body>
 		
 		<div id="app1">
-			<h2>{{message}}</h2>
-			<h2>{{message}},tanhong</h2>
-			<h2>{{info +','+ lastname}}</h2>
-			<h2>{{info}},{{lastname}}</h2>
-			<h2>{{counter*2}}</h2>
+			<h3>{{message}}</h3>
+			<h3>{{message}},tanhong</h3>
+			<h3>{{info +','+ lastname}}</h3>
+			<h3>{{info}},{{lastname}}</h3>
+			<h3>{{counter*3}}</h3>
 		</div>
 		<!-- v-once的使用 -->
 		<div id="app2">
-			<h2>{{message}}</h2>
-			<h2 v-text="message">你好</h2>
-			<h2 v-once>{{message}}</h2>
+			<h3>{{message}}</h3>
+			<h3 v-text="message">你好</h3>
+			<h3 v-once>{{message}}</h3>
+			<!-- v-pre的使用 -->
+			<h3>{{message}}</h3>
+			<h3 v-pre>{{message}}</h3>
 			<!-- v-html的使用 -->
-			<h2>{{url}}</h2>
-			<h2 v-html="url">百度</h2>
-			
+			<h3>{{url}}</h3>
+			<h3 v-html="url">百度</h3>
 		</div>
 		<script src="js/v2.js" type="text/javascript" charset="utf-8"></script>
 	</body>

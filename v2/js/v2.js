@@ -25,3 +25,12 @@ const app2 = new Vue({
 		},
 	}
 })
+
+setTimeout(function(){
+	const app3 = new Vue({
+		el:"#app3",
+		data:{
+			message:'hello',
+		},
+	})
+},1000)

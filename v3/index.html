@@ -53,6 +53,7 @@
 				<li @click="getcolor(index)" 
 				v-for="(m,index) in message" 
 				:class="{active:current===index}">
+				<!-- current===index,两边相等返回true -->
 				{{index}}-{{m}}
 				</li>
 			</ul>

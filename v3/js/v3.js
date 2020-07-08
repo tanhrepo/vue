@@ -35,3 +35,19 @@ const app2 = new Vue({
 		},
 	}
 })
+
+const app3 = new Vue({
+	el:"#app3",
+	data:{
+		// active:'active',
+		message:['hello','海王','火影忍者','进击的巨人','鬼灭之刃'],
+		current:0
+	},
+	methods:{
+		getcolor:function(index){
+			this.current = index;
+			console.log(index);
+			
+		}
+	}
+})

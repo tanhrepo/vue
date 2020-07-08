@@ -47,6 +47,16 @@
 		</div>
 		
 		
+		<!-- 点击列表中的哪一项，该项的颜色变成红色 -->
+		<div id="app3">
+			<ul>
+				<li @click="getcolor(index)" 
+				v-for="(m,index) in message" 
+				:class="{active:current===index}">
+				{{index}}-{{m}}
+				</li>
+			</ul>
+		</div>
 		
 		<script src="js/v3.js" type="text/javascript" charset="utf-8"></script>
 	</body>

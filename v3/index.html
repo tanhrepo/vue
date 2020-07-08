@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<title>动态绑定</title>
 		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/v3.css"/>
 	</head>
 	<body>
 		<div id="app1">
@@ -11,6 +12,25 @@
 			<!-- <img src="{{imgUrl}}" > -->
 			<!-- 应该用v-hind指令 -->
 			<img v-bind:src="imgUrl" >
+			<a v-bind:href="aHref">百度一下</a>
+			
+			<!-- v-bind的语法糖： -->
+			<a :href="aHref">百度一下</a>
+			<img :src="imgUrl" >
+		</div>
+		
+		<div id="app2">
+			<!-- <h3 class="active">{{message}}</h3> -->
+			<!-- <h3 :class="active">{{message}}</h3> -->
+			
+			
+			<!-- 对象语法 -->
+			<!-- <h3 :class="{key1:value1,key2:value2}">{{message}}</h3> -->
+			<!-- <h3 :class="{类名1:true,类名2:boolean}">{{message}}</h3> -->
+			<h3 :class="{active:false,line:true}">{{message}}</h3>
+			<h3 :class="{active:isActive,line:isLine}">{{message}}</h3>
+			<button type="button" @click="bColor()">改变class</button>
+			<h3 class="title" :class="{active:isActive,line:isLine}">{{message}}</h3>
 		</div>
 		
 		<script src="js/v3.js" type="text/javascript" charset="utf-8"></script>

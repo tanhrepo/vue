@@ -11,3 +11,21 @@ const app1 = new Vue({
 		},
 	}
 })
+
+const app2 = new Vue({
+	el:"#app2",
+	data:{
+		message:'hello',
+		active:'active',
+		line:'line',
+		isActive:true,
+		isLine:true,
+	},
+	methods:{
+		bColor:function(){
+			console.log('变色');
+			// this.isActive = !this.isActive;
+			this.isLine = !this.isLine;
+		}
+	}
+})

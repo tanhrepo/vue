@@ -26,6 +26,12 @@ const app2 = new Vue({
 			console.log('变色');
 			// this.isActive = !this.isActive;
 			this.isLine = !this.isLine;
-		}
+		},
+		getclass:function(){
+			return{active:this.isActive,line:this.isLine};
+		},
+		getclass2:function(){
+			return[this.active,this.line]
+		},
 	}
 })

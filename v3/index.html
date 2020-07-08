@@ -27,11 +27,26 @@
 			<!-- 对象语法 -->
 			<!-- <h3 :class="{key1:value1,key2:value2}">{{message}}</h3> -->
 			<!-- <h3 :class="{类名1:true,类名2:boolean}">{{message}}</h3> -->
-			<h3 :class="{active:false,line:true}">{{message}}</h3>
+			<h3 :class="{active:true,line:false}">{{message}}</h3>
 			<h3 :class="{active:isActive,line:isLine}">{{message}}</h3>
 			<button type="button" @click="bColor()">改变class</button>
 			<h3 class="title" :class="{active:isActive,line:isLine}">{{message}}</h3>
+			
+			<!-- 函数调用,注意和上面的区别 -->
+			<h3 class="title" :class="getclass()">{{message}}</h3>
+			
+			<!-- 数组语法 -->
+			<!-- 没有引号的时候是data里面的变量 -->
+			<h3 class="title" :class="[active,line]">{{message}}</h3>
+			<!-- 有引号的时候是字符串 -->
+			<h3 class="title" :class="['active','line']">{{message}}</h3>
+			<!-- 数组语法用的很少，下面能够实现一样的效果 -->
+			<h3 class="title active line">{{message}}</h3>
+			<h3 class="title" :class="getclass2()">{{message}}</h3>
+			
 		</div>
+		
+		
 		
 		<script src="js/v3.js" type="text/javascript" charset="utf-8"></script>
 	</body>

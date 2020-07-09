@@ -8,10 +8,8 @@ const app1 = new Vue({
 		fcolor:'blue',
 	},
 	methods:{
-		getcolor:function(index){
-			this.current = index;
-			console.log(index);
-			
+		getStyles:function(){
+			return{fontSize:this.fsize2+'px',color:this.fcolor}
 		}
 	}
 })

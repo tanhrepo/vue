@@ -8,10 +8,13 @@
 	<body>
 		<div id="app1">
 			<!-- <h3 :style="{key(属性名):value(属性值)}">{{message}}</h3> -->
-			<h3 :style="{fontSize:fsize1,color:fcolor}">{{message}}</h3>
+			<h3 :style="{fontSize:fsize1}">{{message}}</h3>
 			<h3 :style="{fontSize:fsize2+'px'}">{{message}}</h3>
 			<!-- '50px'必须加上引号，否则是当作一个变量去解析 -->
 			<h3 :style="{fontSize:'20px',color:'red'}">{{message}}</h3>
+			<h3 :style="{fontSize:'20px',color:fcolor}">{{message}}</h3>
+			<h3 :style="{fontSize:fsize2+'px',color:fcolor}">{{message}}</h3>
+			<h3 :style="getStyles()">{{message}}</h3>
 		</div>
 		
 		<script src="js/v4.js" type="text/javascript" charset="utf-8"></script>

@@ -30,3 +30,22 @@ const app2 = new Vue({
 		}
 	}
 })
+
+const app3 = new Vue({
+	el:"#app3",
+	data:{
+		firstName:'Jake',
+		lastName:'Rose',
+	},
+	// computed:计算属性
+	computed:{
+		fullName:function(){
+			return this.firstName + ' ' + this.lastName;
+		}
+	},
+	methods:{
+		getFullName:function(){
+			return this.firstName + ' ' + this.lastName;
+		}
+	},
+})

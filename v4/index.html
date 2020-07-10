@@ -22,6 +22,15 @@
 		<div id="app2">
 			<h3 :style="[baseStyle1,baseStyle2]">{{message}}</h3>
 		</div>
+		
+		<!-- 计算属性 -->
+		<div id="app3">
+			<h3>{{firstName + ' ' + lastName}}</h3>
+			<h3>{{firstName}} {{lastName}}</h3>
+			<h3>{{getFullName()}}</h3>
+			<h3>{{fullName}}</h3>
+		</div>
+		
 		<script src="js/v4.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

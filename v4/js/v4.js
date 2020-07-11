@@ -69,3 +69,27 @@ const app3 = new Vue({
 		}
 	},
 })
+
+const app4 = new Vue({
+	el:"#app4",
+	data:{
+		firstName:'Kobe',
+		lastName:'Bryant',
+	},
+	computed:{
+		// 简写
+		// fullName:function(){
+		// 	return this.firstName + ' ' + this.lastName;
+		// },
+		
+		// 完整写法
+		fullName:{
+			set:function(){
+				
+			},
+			get:function(){
+				return 'abc'
+			},
+		}
+	}
+})

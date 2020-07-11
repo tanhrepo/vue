@@ -40,6 +40,21 @@
 			<h3>{{fullName}}</h3>
 		</div>
 		
+		
+		<!-- 计算属性和methods的对比 -->
+		<div id="app5">
+			<h3>{{firstName}} {{lastName}}</h3>
+			<!-- methods方法 -->
+			<h3>{{getFullName()}}</h3>
+			<h3>{{getFullName()}}</h3>
+			<h3>{{getFullName()}}</h3>
+			<h3>{{getFullName()}}</h3>
+			<!-- 计算属性，多次调用的时候性能比methods要好很多，如果里面的内容没有变，只会进行一次调用 -->
+			<h3>{{fullName}}</h3>
+			<h3>{{fullName}}</h3>
+			<h3>{{fullName}}</h3>
+			<h3>{{fullName}}</h3>
+		</div>
 		<script src="js/v4.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

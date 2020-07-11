@@ -85,13 +85,36 @@ const app4 = new Vue({
 		// 完整写法
 		fullName:{
 			// 计算属性一般情况set方法不用设置,只读属性
-			set:function(){
-				
+			set:function(newValue){
+				// console.log('-----------',newValue);
+				const names = newValue.split(' ');
+				this.firstName = names[0];
+				this.lastName = names[1];
 			},
 			get:function(){
 				// return 'abc'
 				return this.firstName + ' ' + this.lastName;
 			},
+		}
+	}
+})
+
+const app5 = new Vue({
+	el:"#app5",
+	data:{
+		firstName:'Tan',
+		lastName:'Hong',
+	},
+	methods:{
+		getFullName:function(){
+			console.log('methods');
+			return this.firstName + ' ' + this.lastName;
+		}
+	},
+	computed:{
+		fullName:function(){
+			console.log('computed');
+			return this.firstName + ' ' + this.lastName;
 		}
 	}
 })

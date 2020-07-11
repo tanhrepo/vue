@@ -77,18 +77,20 @@ const app4 = new Vue({
 		lastName:'Bryant',
 	},
 	computed:{
-		// 简写
+		// 简写,只有get方法
 		// fullName:function(){
 		// 	return this.firstName + ' ' + this.lastName;
 		// },
 		
 		// 完整写法
 		fullName:{
+			// 计算属性一般情况set方法不用设置,只读属性
 			set:function(){
 				
 			},
 			get:function(){
-				return 'abc'
+				// return 'abc'
+				return this.firstName + ' ' + this.lastName;
 			},
 		}
 	}

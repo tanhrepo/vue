@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app1">
+			<h2>v-if--------------------------</h2>
+			<h3 v-if="true">{{message}}</h3>
+			<h3 v-if="false">{{message}}</h3>
+			<h3 v-if="isShow">{{message}}</h3>
+			<h2>v-if、v-else-----------------</h2>
+			<h3 v-if="isShow">{{message}}</h3>
+			<h3 v-else>v-else:isShow为false的时候，显示我</h3>
+			<h2>v-else-if---------------------</h2>
+			<h3 v-if="scoreLive>=90">优秀</h3>
+			<h3 v-else-if="scoreLive>=80">良好</h3>
+			<h3 v-else-if="scoreLive>=60">及格</h3>
+			<h3 v-else-if="scoreLive<60">不及格</h3>
+			<h3>{{result}}</h3>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id="app2">
+			<h3>vue虚拟DOM复用</h3>
+			<span v-if="isShow">
+				<label for="username">用户账号</label>
+				<input type="text" placeholder="用户账号" />
+			</span>
+			<span v-else>
+				<label for="email">用户邮箱</label>
+				<input type="text" placeholder="用户邮箱" />
+			</span>
+			<button type="button" @click="isShow = !isShow">切换类型</button>
+		</div>
+		<div id="app3">
+			<h3>用key值解决vue虚拟DOM复用</h3>
+			<span v-if="isShow">
+				<label for="username">用户账号</label>
+				<input type="text" placeholder="用户账号" key="username"/>
+			</span>
+			<span v-else>
+				<label for="email">用户邮箱</label>
+				<input type="text" placeholder="用户邮箱" key="email"/>
+			</span>
+			<button type="button" @click="isShow = !isShow">切换类型</button>
+		</div>
+		<br>
+		<br>
+		<div id="app4">
+			<!-- v-if当条件为false时,压根不会有对应的元素在DOM中。 -->
+			<h3 v-if="isShow">{{message}}</h3>
+			<!-- v-show当条件为false时,仅仅是将元素的display属性设置为none而已。 -->
+			<h3 v-show="isShow">{{message}}</h3>
+			
+			<!-- 当需要在显示与隐藏之间切片很频繁时,使用v-show -->
+			<!-- 当只有一次切换时,通过使用v-if -->
+		</div>
+
+		<script src="js/v7.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

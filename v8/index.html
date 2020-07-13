@@ -7,10 +7,9 @@
 	</head>
 	<body>
 		<div id="app1">
-			<button type="button">按钮</button>
+			<button type="button" @click="btnClick()">按钮</button>
 			<ul>
-				<!-- 加上key可以让性能更好 -->
-				<li v-for="(item,index) in letters" :key="item">{{index+1}}-{{item}}</li>
+				<li v-for="(item,index) in letters">{{index+1}}-{{item}}</li>
 			</ul>
 			
 		</div>

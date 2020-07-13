@@ -48,7 +48,7 @@ const app1 = new Vue({
 			
 			// vue里面的方法
 			// set(要修改的对象,索引值,修改后的值)
-			Vue.set(this.letters,0,'aaaaaaaaaa')
+			// Vue.set(this.letters,0,'aaaaaaaaaa')
 			
 			
 			console.log(this.letters);

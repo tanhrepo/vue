@@ -7,19 +7,54 @@
 	</head>
 	<body>
 		<div id="app1">
+			<h3>v-on参数传递问题</h3>
 			<!-- 1.事件调用的方法没有参数 -->
 			<button type="button" @click="btn1Click()">按钮1</button>
 			<button type="button" @click="btn1Click">按钮1</button>
+			<br>
 			
 			<!-- 2.在事件定义时，写方法时省略了小括号，但是方法本身是需要一个参数的，这个时候，
 			vue会默认将浏览器生产的event事件对象作为参数传入到方法 -->
 			<button type="button" @click="btn2Click(123)">按钮2</button>
 			<button type="button" @click="btn2Click()">按钮2</button>
 			<button type="button" @click="btn2Click">按钮2</button>
-			<button type="button">按钮3</button>
-			<button type="button">按钮4</button>
-			<button type="button">按钮5</button>
+			<br>
+			
+			<!-- 3.方法定义时，我们需要event对象，同时又需要其他参数，
+			在调用方式，如何手动的获利到浏览器参数的event对象：$event -->
+			<button type="button" @click="btn3Click()">按钮3</button>
+			<button type="button" @click="btn3Click(1234)">按钮3</button>
+			<button type="button" @click="btn3Click">按钮3</button>
+			<button type="button" @click="btn3Click(123,event)">按钮3</button>
+			<button type="button" @click="btn3Click(123,$event)">按钮3</button>
 		</div>
+		<br>
+		<br>
+		<br>
+		<h3>v-on修饰符</h3>
+		<div id="app2" @click="divClick()">
+			
+			<!-- 1.  .stop修饰符 -->
+			<button type="button" @click="btnClick()">按钮</button><br>
+			<button type="button" @click.stop="btnClick()">.stop修饰符</button>
+			<br>div内的元素，点我<br>
+			<br>
+			<!-- 2. .prevent修饰符 -->
+			<form action="baidu" method="">
+				<input type="submit" value="提交" @click="submitClick()"/><br>
+				<input type="submit" value="提交" @click.prevent="submitClick()"/>
+			</form>
+			<br>
+			<!-- 3. 监听键盘按键 -->
+			<input type="text" @keyup="keyUp()"/><br>
+			<input type="text" @keyup.enter="keyUp()"/><br>
+			<br>
+			<!-- 4. .onec修饰符 -->
+			<button type="button" @click="onceKey()">没有.onec修饰符</button>
+			<button type="button" @click.once="onceKey()">.onec修饰符</button>
+		</div>
+		
+		
 		
 		<script src="js/v6.js" type="text/javascript" charset="utf-8"></script>
 	</body>

@@ -17,5 +17,32 @@ const app1 = new Vue({
 		btn2Click(event){
 			console.log("btn2Click",event);
 		},
+		btn3Click(abc,event){
+			console.log("btn3Click",abc,event);
+		},
+	}
+})
+
+const app2 = new Vue({
+	el:"#app2",
+	data:{
+		message:'hello',
+	},
+	methods:{
+		btnClick(){
+			console.log("btnClick");
+		},
+		divClick(event){
+			console.log("divClick");
+		},
+		submitClick(){
+			console.log("submitClick");
+		},
+		keyUp(){
+			console.log("keyUp");
+		},
+		onceKey(){
+			console.log("once");
+		}
 	}
 })

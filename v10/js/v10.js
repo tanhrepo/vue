@@ -62,28 +62,28 @@ option = {
 				value: 27,
 				name: '涪陵',
 				itemStyle: {
-					color: '#00875e'
+					color:"#f4b58a"
 				}
 			},
 			{
 				value: 16,
 				name: '南川',
 				itemStyle: {
-					color: '#53b1d3'
+					color:"#ff6a6c"
 				}
 			},
 			{
 				value: 33,
 				name: '丰都',
 				itemStyle: {
-					color: '#0073b6'
+					color:"#00875d"
 				}
 			},
 			{
 				value: 24,
 				name: '酉阳',
 				itemStyle: {
-					color: '#7ad2a0'
+					color:"#52b1d3"
 				}
 			},
 			{

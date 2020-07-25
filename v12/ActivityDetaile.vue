@@ -19,6 +19,11 @@
 
         mounted() {
             this.initEcharts();
+            window.addEventListener('resize', () => {
+                if (this.horizontalBar && this.horizontalBar.resize) {
+                    this.horizontalBar.resize();
+                }
+            });
         },
         methods:{
             initEcharts() {

@@ -6,23 +6,34 @@ window.onload = function(){
 	let divide = document.getElementById("divide");
 	//绑定事件
 	add.onclick = function(){
-		let num1 = window.parseFloat(document.getElementById("num1").value);
-		let num2 = window.parseFloat(document.getElementById("num2").value);
-		result.value = num1 + num2;
+		calculate("add");
 	}
 	sub.onclick = function(){
-		let num1 = document.getElementById("num1").value;
-		let num2 = document.getElementById("num2").value;
-		result.value = num1 - num2
+		calculate("sub");
 	}
 	mul.onclick = function(){
-		let num1 = document.getElementById("num1").value;
-		let num2 = document.getElementById("num2").value;
-		result.value = num1 * num2
+		calculate("mul");
 	}
 	divide.onclick = function(){
-		let num1 = document.getElementById("num1").value;
-		let num2 = document.getElementById("num2").value;
-		result.value = num1 / num2
+		calculate("divide");
+	}
+	function calculate(type){
+		let result = document.getElementById("result");
+		let num1 = window.parseFloat(document.getElementById("num1").value);
+		let num2 = window.parseFloat(document.getElementById("num2").value);
+		switch(type){
+			case "add":
+				result.value = num1 + num2;
+				break;
+			case "sub":
+				result.value = num1 - num2;
+				break;
+			case "mul":
+				result.value = num1 * num2;
+				break;
+			case "divide":
+				result.value = num1 / num2;
+				break;
+		}
 	}
 }	

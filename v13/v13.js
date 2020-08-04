@@ -34,6 +34,8 @@ window.onload = function(){
 			case "divide":
 				result.value = num1 / num2;
 				break;
+			default:
+				break;
 		}
 	}
 }	

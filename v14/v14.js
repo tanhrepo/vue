@@ -3,7 +3,7 @@ window.onload = function(){
 	let city = document.getElementById("city");
 	province.onchange = function(){
 		// alert(this.value);
-		city.innerHT     ML='';
+		city.innerHTML='';
 		switch (this.value){
 			case "guangdong":
 				//填充广东的城市信息

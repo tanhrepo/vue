@@ -38,3 +38,19 @@ console.log(bar) // "bbb"
 let { baz } = { foo: 'aaa', bar: 'bbb' };
 console.log(baz) // undefined
 
+
+const node = {
+  loc: {
+    start: {
+      line: 1,
+      column: 5
+    }
+  }
+};
+let { loc, loc: { start }, loc: { start: { line }} } = node;
+console.log(line) // 1
+console.log(loc)  // Object {start: Object}
+console.log(start) // Object {line: 1, column: 5}
+//上面代码有三次解构赋值，分别是对loc、start、line三个属性的解构赋值。
+//注意，最后一次对line属性的解构赋值之中，只有line是变量，loc和start都是模式，不是变量。
+//星期天

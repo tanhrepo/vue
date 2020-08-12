@@ -54,3 +54,4 @@ console.log(start) // Object {line: 1, column: 5}
 //上面代码有三次解构赋值，分别是对loc、start、line三个属性的解构赋值。
 //注意，最后一次对line属性的解构赋值之中，只有line是变量，loc和start都是模式，不是变量。
 //星期天
+//console.log()

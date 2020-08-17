@@ -6,19 +6,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>SheetJS + x-spreadsheet Live Demo</title>
 <style>
-	#drop{
-		border:2px dashed #bbb;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		border-radius:5px;
-		padding:25px;
-		text-align:center;
-		font:20pt bold,"Vollkorn";color:#bbb
-	}
-	#b64data{
-		width:100%;
-	}
-	a { text-decoration: none }
+#drop{
+	border:2px dashed #bbb;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:25px;
+	text-align:center;
+	font:20pt bold,"Vollkorn";color:#bbb
+}
+#b64data{
+	width:100%;
+}
+a { text-decoration: none }
 </style>
 <!-- x-spreadsheet stylesheet -->
 <link rel="stylesheet" href="https://unpkg.com/x-data-spreadsheet/dist/xspreadsheet.css"/>
@@ -152,12 +152,12 @@ var do_file = (function() {
 function export_xlsx() {
 	var new_wb = xtos(xspr.getData());
 
-	// /* write file and trigger a download */
+	/* write file and trigger a download */
 	XLSX.writeFile(new_wb, 'sheetjs.xlsx', {});
 }
 </script>
 <script type="text/javascript">
-// /* eslint no-use-before-define:0 */
+/* eslint no-use-before-define:0 */
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-36810333-1']);
 	_gaq.push(['_trackPageview']);

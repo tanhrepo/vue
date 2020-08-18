@@ -121,6 +121,7 @@ var do_file = (function() {
 	};
 })();
 
+//拖动拉入文件
 (function() {
 	var drop = document.getElementById('drop');
 	if(!drop.addEventListener) return;
@@ -142,6 +143,7 @@ var do_file = (function() {
 	drop.addEventListener('drop', handleDrop, false);
 })();
 
+//导入文件
 (function() {
 	var xlf = document.getElementById('xlf');
 	if(!xlf.addEventListener) return;
@@ -149,6 +151,8 @@ var do_file = (function() {
 	xlf.addEventListener('change', handleFile, false);
 })();
 
+
+//导出xlsx文件
 function export_xlsx() {
 	var new_wb = xtos(xspr.getData());
 

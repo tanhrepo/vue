@@ -56,4 +56,15 @@ const app = new Vue({
 
 const app2 = new Vue({
 	el:"#app2", 
+	components:{
+		myCpn3:{
+			template: `
+			<div>
+				<h2>这里是语法糖(局部)</h2>
+				<p>这是内容11111111111</p>
+				<p>这是内容22222222222</p>
+			</div>
+			`
+		}
+	}
 })

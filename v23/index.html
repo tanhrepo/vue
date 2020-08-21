@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app1">
+			<cpn></cpn>
+			<cpn></cpn>
+			<cpn></cpn>
+			<cpn></cpn>
+		</div>
+		
+		<!-- 抽离template -->
+		<!-- 1.使用script标签，注意type必须为"text/x-template" -->
+		<!-- <script type="text/x-template" id="cpn1">
+			<div>
+				<h3>我是标题</h3>
+				<p>我是内容</p>
+			</div>
+		</script> -->
+		<!-- 2.template标签 -->
+		<template id="cpn2">
+			<div>
+				<h3>我是标题</h3>
+				<p>我是内容</p>
+			</div>
+		</template>
+		
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/v23.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

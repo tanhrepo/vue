@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app1">
+			<cpn :cmovies="movies" :cmessage="message"></cpn>
+		</div>
+		
+		<template id="cpn">
+			<div>
+				<ul>
+					<li v-for="item of cmovies">{{item}}</li>
+				</ul>
+				<p>{{cmessage}}</p>
+			</div>
+		</template>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/v24.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

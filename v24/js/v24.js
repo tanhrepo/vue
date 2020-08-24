@@ -39,3 +39,21 @@ const app1 = new Vue({
 		cpn
 	}
 })
+
+const cpn = {
+	template:"",
+	props:{
+		
+	},
+	data(){
+		return{
+			
+		}
+	},
+	methods:{
+		
+	},
+	components:{
+		
+	}
+}

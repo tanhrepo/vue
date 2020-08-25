@@ -57,3 +57,12 @@ const cpn = {
 		
 	}
 }
+
+person(name,age){
+	this.name = name;
+	this.age = age;
+}
+
+let vga = function(){
+	let sum = 0
+}

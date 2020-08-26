@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app1">
+			<cpn></cpn>
+		</div>
+		
+		<template id="cpn">
+			<div>
+				<button type="button" v-for="item in categories"
+				@click="btnClick(item)">{{item.name}}</button>
+			</div>
+		</template>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/v25.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

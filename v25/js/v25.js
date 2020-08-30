@@ -34,3 +34,5 @@ const app1 = new Vue({
 		}
 	}
 })
+
+// ..__constructor__()

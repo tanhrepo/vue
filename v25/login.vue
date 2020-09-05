@@ -23,6 +23,4 @@
         background-color: lightblue;
     }
 	
-	
-	
 </style>

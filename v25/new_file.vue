@@ -36,6 +36,7 @@
                             color: '#333',
                         },
                     },
+					
 
                     yAxis: [{
                         axisLabel: {

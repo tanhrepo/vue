@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		ul{margin:0px;padding:0px;}
+		li{float:left;cursor:pointer;}
+		.map_div{width:900px;height:40px;background-color:#000000;overflow:hidden;}
+		#dh_li{width:800px;height:40px;background-color:#000000;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;text-overflow:ellipsis;display:block;after:content:"...";}
+		#dh_li li{width:150px;height:40px;background-color:#000000;color:#FF0000;border-right:1px solid #FF0000;text-align:center;padding-top:10px;overflow:hidden;}
+		#dh_li li a:link{color:#FF0000;}
+		#dh_li li a:visited{color:#FF0000;}
+		#dh_li li a:hover{color:#FF0000;}
+		.dh_li{width:50px;height:40px;font-size:20px;font-weight:bold;color:#FF0000;text-align:center;padding-top:10px;background-color:#CCCCCC;}
+		</style>
+	</head>
+	<body>
+		<div class="map_div">
+		        <ul>
+		            <li id="left_" class="dh_li" onclick="move_left();">←</li>
+		            <li id="dh_li">
+		                <div style="width:1500px;">
+		                    <ul>
+		                        <li><a href="#">网站首页</a></li>
+		                        <li><a href="#">公司简介</a></li>
+		                        <li><a href="#">产品展示</a></li>
+		                        <li><a href="#">新闻咨询</a></li>
+		                        <li><a href="#">热点咨询</a></li>
+		                        <li><a href="#">合作伙伴</a></li>
+		                        <li><a href="#">网站论坛</a></li>
+		                        <li><a href="#">在线咨询</a></li>
+		                        <li><a href="#">联系我们</a></li>
+		                    </ul>
+		                </div>
+		            </li>
+		            <li id="right_" class="dh_li" onclick="move_right();">→</li>
+		        </ul>
+		    </div>
+			
+			<script>
+			var demo=document.getElementById("dh_li");
+			function move_right(){
+			    if(dh_li.scrollLeft<=(1500-800))
+			    dh_li.scrollLeft+=160;
+			}
+			function move_left(){
+			    if(dh_li.scrollLeft>=0)
+			    dh_li.scrollLeft-=160;
+			}
+			</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.aaa{
+				position: relative;
+				width: 300px;
+				height: 300px;
+				margin: 150px auto 0;
+				border-radius: 50%;
+				/* background-color: lightyellow; */
+				background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
+			}
+			.aaa::after{
+				content: "";
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				transform: translate(-50% ,-50%);
+				background-color: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="background-color: #666666;height: 1000px;">
+			<div style="width: 800px;height: 200px;margin: 0 auto;background-color: lightblue;"></div>
+			<div style="width: 800px;height: 200px;margin: 0 auto;background-color: lightcoral;overflow-y: hidden;">
+				<div style="width: 400px;height: 100px;margin: 100px auto 0;background-color: lightcyan;box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);"></div>
+			</div>
+			<div style="width: 800px; height: 600px;background-color: #000000;margin: 0 auto;overflow-y: hidden;">
+				<div class="aaa">
+					<div class="bbb"></div>
+				</div>
+			</div>
+			<div></div>
+		</div>
+	</body>
+</html>

@@ -28,6 +28,17 @@
 				/* 绑定到选择器的keyframe名称 时间 速度曲线 无限循环 */
 			}
 			@keyframes animate{
+				from
+				{
+					transform: rotate(0deg);
+				}
+				to
+				{
+					transform: rotate(360deg);
+				}
+			}
+			/* 两种写法 */
+			/* @keyframes animate{
 				0%
 				{
 					transform: rotate(0deg);
@@ -36,7 +47,7 @@
 				{
 					transform: rotate(360deg);
 				}
-			}
+			} */
 			.aaa::before{
 				content: "";
 				position: absolute;

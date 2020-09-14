@@ -4,6 +4,18 @@
 		<meta charset="utf-8">
 		<title></title>
 		<style type="text/css">
+			{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #000000;
+				height: 100vh;
+			}
 			.aaa{
 				position: relative;
 				width: 300px;
@@ -12,32 +24,48 @@
 				border-radius: 50%;
 				/* background-color: lightyellow; */
 				background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
+				animation: animate 2s linear infinite;
 			}
-			.aaa::after{
+			@keyframes animate{
+				0%
+				{
+					transform: rotate(0deg);
+				}
+				100%
+				{
+					transform: rotate(360deg);
+				}
+			}
+			.aaa::before{
 				content: "";
 				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: 200px;
-				height: 200px;
+				top: 20px;
+				left: 20px;
+				right: 20px;
+				bottom: 20px;
 				border-radius: 50%;
-				transform: translate(-50% ,-50%);
 				background-color: #000;
+				z-index: 1000;
+			}
+			.aaa::after{
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border-radius: 50%;
+				background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
+				z-index: 1;
+				filter: blur(30px);
 			}
 		</style>
 	</head>
 	<body>
-		<div style="background-color: #666666;height: 1000px;">
-			<div style="width: 800px;height: 200px;margin: 0 auto;background-color: lightblue;"></div>
-			<div style="width: 800px;height: 200px;margin: 0 auto;background-color: lightcoral;overflow-y: hidden;">
-				<div style="width: 400px;height: 100px;margin: 100px auto 0;background-color: lightcyan;box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);"></div>
+		<div style="width: 800px; height: 600px;background-color: #000000;margin: 0 auto;overflow-y: hidden;">
+			<div class="aaa">
+				<div class="bbb"></div>
 			</div>
-			<div style="width: 800px; height: 600px;background-color: #000000;margin: 0 auto;overflow-y: hidden;">
-				<div class="aaa">
-					<div class="bbb"></div>
-				</div>
-			</div>
-			<div></div>
 		</div>
 	</body>
 </html>

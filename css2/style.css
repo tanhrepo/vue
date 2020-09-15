@@ -1,0 +1,600 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(#122833, #000);
+    min-height: 100vh;
+}
+
+input {
+    opacity: 0;
+}
+
+.font h1 {
+    position: absolute;
+    top: 94%;
+    left: 75%;
+    color: blanchedalmond;
+    font-family: 'Long Cang', cursive;
+}
+
+.font2 h1 {
+  position: absolute;
+  top: 6%;
+  left: 20%;
+  font-size: 400px;
+  font-family: 'Kaushan Script', cursive;
+  z-index: -1;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #122833;
+    border: solid 12px #111f27;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 10%;
+    height: 5%;
+    position: absolute;
+    left: 264px;
+    top: 280px;
+    display: block;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 4;
+}
+.red {
+    width: 60px;
+    height: 60px;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+}
+.orange {
+    left: 9px;
+    width: 40px;
+    height: 40px;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+}
+.gold {
+    left: 17px;
+    width: 30px;
+    height: 30px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+.white {
+    left: 16px;
+    width: 25px;
+    height: 25px;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+}
+.blue {
+    top: 0;
+    left: 26px;
+    width: 8px;
+    height: 4px;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+}
+.black {
+    left: 24px;
+    width: 10px;
+    height: 15px;
+    bottom: -10px;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+    display: "";
+}
+.base {
+    border-radius: 50%;
+    position: absolute;
+}
+.flame-wrapper {
+    position: absolute;
+    animation: flicker 1s ease-in infinite;
+}
+.flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+}
+
+.particle-fire {
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    width: 10px;
+    height: 10px;
+    background-color: #ef5a00;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #d43322);
+    animation: particleUp 2s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    z-index: 1;
+}
+
+.fire-details {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #ef5a00;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #d43322);
+    animation: fireUp 2s ease-out 0;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    z-index: 1;
+}
+
+.shine {
+    transition: 1.5s;
+    width: 100px;
+    height: 100px;
+    top: -85px;
+    left: -20px;
+    position: absolute;
+    background-color: rgba(255, 255, 239, 0.199);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 239, 0.199);
+    border-radius: 50% 50% 30% 30%;
+    z-index: -1;
+}
+
+.smoke  {
+    transition: 1s;
+    position: absolute;
+    opacity: 0;
+    bottom: 88px;
+    left: 286px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.smoke ul {
+    transform: translateX(-50%);
+}
+
+.smoke li {
+    position: absolute;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+li:nth-child(even) {
+    animation: animateEven 2.8s linear infinite;
+}
+
+li:nth-child(odd) {
+    animation: animateOdd 2.8s linear infinite;
+}
+
+li:nth-child(9) {
+    animation: none;
+    filter: blur(15px);
+}
+
+@keyframes animateEven {
+    0% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+        filter: blur(5px);
+    }
+    100% {
+        transform: translate(30px,-90px) scale(2);
+        opacity: 0;
+        filter: blur(7px);
+   }
+}
+
+@keyframes animateOdd {
+    0% {
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+        filter: blur(5px);
+    }
+    100% {
+        transform: translate(-30px,-90px) scale(2);
+        opacity: 0;
+        filter: blur(6px);
+   }
+}
+
+li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+li:nth-child(2) {
+    animation-delay: .4s;
+}
+
+li:nth-child(3) {
+    animation-delay: .6s;
+}
+
+li:nth-child(4) {
+    animation-delay: .8s;
+}
+
+li:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+li:nth-child(6) {
+    animation-delay: 1.6s;
+}
+
+li:nth-child(7) {
+    animation-delay: 2s;
+}
+
+li:nth-child(8) {
+    animation-delay: 2.4s;
+}
+
+li:nth-child(9) {
+    animation-delay: 2.8s;
+}
+
+.earth {
+    width: 180%;
+    height: 80%;
+    background-color: rgb(37, 29, 2);
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+}
+
+.wood {
+    position: absolute;
+    z-index: 3;
+    left: 292px; 
+	bottom: 58px;
+	width: 100px;
+	height: 36px;
+    background-image: url('https://ivang-design.com//svg-load/air/wood.png');
+    background-size: 100px 36px;
+    margin-left: -50px;
+}
+
+.moon {
+    position: absolute;
+    z-index: 2;
+    left: 60px;
+    bottom: 260px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: shine 2s ease-in-out infinite;
+    background-color: rgb(230, 224, 224);
+    box-shadow: 0px 0px 8px 2px rgba(235, 235, 231, 0.301);
+    overflow: hidden;
+}
+
+.details {
+    position: absolute;
+    left: 18px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(165, 165, 165, 0.089);
+}
+
+.details.one {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: inset 2px 0 4px rgba(167, 167, 167, 0.685);
+}
+
+.details.two {
+    position: absolute;
+    top: 60px;
+    left: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: inset -2px 0 4px rgba(167, 167, 167, 0.685);
+}
+
+.details.three {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: inset 2px 0 4px rgba(167, 167, 167, 0.685);
+}
+
+.owl-container {
+    position: absolute;
+    top: 2em;
+    left: 0em;
+    z-index: 4;
+}
+
+.owl {
+    width: 60px;
+    height: 90px;
+    background: transparent;
+    border-radius: 0 0 40px 40px;
+    box-shadow: -1px 82px 2px 0 #462f07;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+}
+
+.eyes-owl, .eyes-owl::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(143, 94, 2, 0.781);
+    box-shadow: 0 0 8px 0;
+    position: absolute;
+    top: 8em;
+    left: 15px;
+}
+
+.eyes-owl::before {
+    content: "";
+    top: 0;
+    left: 32px;
+}
+
+.iris, .iris::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(#462f07 50%, rgba(255, 255, 255, 0.664) 50%);
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+
+.iris::before {
+    content: "";
+    top: 0;
+    left: 32px;
+}
+
+.pupil, .pupil::before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: linear-gradient(transparent 50%, black 30%);
+    position: absolute;
+    top: 4px;
+    left: 5px;
+}
+
+.pupil::before {
+    content: "";
+    top: 0;
+    left: 32px;
+}
+
+.owl-beak {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid rgb(143, 94, 2, 0.781);
+    position: relative;
+    top: 9.2em;
+    left: 33px;
+}
+
+.wings, .wings::before {
+    width: 19px;
+    height: 46px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #462f07;
+    top: 9.5em;
+    right: -12px;
+    box-shadow: 0 0 2px 0;
+    z-index: 8;
+}
+
+.wings::before {
+    content: "";
+    top: 0;
+    right: -49px;
+}
+
+.owl-legs, .owl-legs::before {
+    width: 8px;
+    height: 4px;
+    background-color: rgb(143, 94, 2, 0.781);
+    border-radius: 30%;
+    position: absolute;
+    top: 12.2em;
+    left: 1.6em;
+}
+
+.owl-legs::before {
+    content: "";
+    top: 0;
+    left: 1.1em;
+}
+
+.stick {
+    position: absolute;
+    top: 196px;
+    left: 0;
+    width: 80px; 
+    height: 10px; 
+    background: #221c02;
+    z-index: 6;
+}
+
+.tree, .tree::before {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border-right: 40px solid transparent;
+    border-top: 110px solid transparent;
+    border-left: 40px solid transparent;
+    border-bottom: 110px solid #031b0a;
+}
+
+.tree::before {
+    content: "";
+    top: -160px;
+    left: 220px;
+}
+
+.trunk, .trunk::before {
+    position: absolute;
+    top: 110px;
+    left: -8px;
+    width: 15px;
+    height: 30px;
+    background-color: rgb(22, 11, 0);
+}
+
+.trunk::before {
+    content: "";
+    top: -50px;
+    left: 260px;
+}
+
+.stars {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 8px 2px rgba(235, 235, 231, 0.301);
+    position: absolute;
+    animation: twinkle 2s ease-in-out infinite;
+    bottom: 320px;
+    left: 200px;
+    z-index: 6;
+}
+
+.stars.one {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 8px 4px rgba(235, 235, 231, 0.356);
+    position: absolute;
+    bottom: 230px;
+    left: 300px;
+    z-index: 6;
+}
+
+.stars.two {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 8px 3px rgba(235, 235, 231, 0.301);
+    position: absolute;
+    bottom: 180px;
+    left: 120px;
+    z-index: 6;
+}
+
+@keyframes shine {
+    50% {
+        box-shadow: none;
+    }
+}
+
+@keyframes twinkle {
+    50% {
+        box-shadow: none;
+    }
+}
+
+@keyframes flicker {
+    0% {transform: rotate(-1deg);}
+    20% {transform: rotate(2deg) scaleY(1.05);}
+    40% {transform: rotate(-1deg);}
+    60% {transform: rotate(1deg);}
+    80% {transform: rotate(-1deg) scaleY(0.90);}
+    100% {transform: rotate(1deg);}
+}
+
+@keyframes particleUp {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+      
+    }
+    100% {
+      opacity: 0;
+      top: -100px;
+      transform: scale(0.2);
+    }
+}
+
+@keyframes fireUp {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: -100px;
+        transform: scale(0.1);
+    }
+}
+
+input[type=checkbox]:checked +label .wrapper {
+    opacity: 0;
+}
+
+input[type=checkbox]:checked +label .smoke {
+    opacity: 1;
+}

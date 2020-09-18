@@ -1,0 +1,10 @@
+/* 1. 根元素(<html>)
+2. 浮动元素(元素的float不是none)
+3. 绝对定位元素(元素的position为absolute 或 fixed)
+4. display为inline-block、table-cell、table-caption、table、table-row、table-row-group
+	table-header-group、table-footer-group、inline-table、flow-root、
+	flex或inline-flex、grid或 inline-grid
+5. overflow值不为 visible的块元素
+6. contain值为 layout、content或 paint的元素
+7. 多列容器（元素的column-count或 column-width不为 auto，包括column-count为1)
+ */

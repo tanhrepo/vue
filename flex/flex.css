@@ -70,4 +70,5 @@ html,body{
 	margin: 20px 10px;
 	flex: 0 0 300px;	/* flex:是否放大,是否缩小,宽度 */
 	background-color: lightcoral;
+	
 }

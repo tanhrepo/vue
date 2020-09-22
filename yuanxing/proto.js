@@ -30,4 +30,6 @@ console.log(User.prototype.__proto__ == User.__proto__.__proto__);
 
 let th = new User();
 th.show();
+// 向上调用User.prototype里面的show方法
 th.zeng();
+// 调用Object.prototype里面的zeng方法

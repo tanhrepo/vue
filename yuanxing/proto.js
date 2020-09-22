@@ -33,3 +33,19 @@ th.show();
 // 向上调用User.prototype里面的show方法
 th.zeng();
 // 调用Object.prototype里面的zeng方法
+
+let abc = {}//这个对象是由构造函数object创建的
+console.dir(abc)
+console.log("object",abc.__proto__ == Object.prototype)
+
+let arr = []//new Array
+console.log("array",arr.__proto__ == Array.prototype)
+
+let str = ""//new String
+console.log("string",str.__proto__ == String.prototype)
+
+let bool = true;
+console.log("bool",bool.__proto__ == Boolean.prototype)
+
+let reg = /a/i;  //new RegExp
+console.log("regexp",reg.__proto__ == RegExp.prototype)

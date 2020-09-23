@@ -41,3 +41,4 @@ console.log(zhangsan)
 console.log(lisi)
 lisi.show()
 zhangsan.show()
+

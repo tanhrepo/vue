@@ -42,3 +42,8 @@ console.log(lisi)
 lisi.show()
 zhangsan.show()
 
+
+function createByobject(obj,...args){
+	
+}
+let th = createByobject(th,'tanhong')

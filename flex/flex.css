@@ -40,6 +40,8 @@ html,body{
 	align-content: center;	/* 交叉轴的中点对齐。 */
 	/* align-content: flex-start | flex-end | center | space-between | space-around | stretch; */
 	
+	
+	
 	/* align-content: flex-start(与交叉轴的起点对齐) | flex-end(与交叉轴的终点对齐) | center(与交叉轴的中点对齐 ) */
 	/* | space-between(与交叉轴两端对齐，轴线之间的间隔平均分布 ) */
 	/* | space-around(每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍) */

@@ -61,5 +61,6 @@ function createByobject(obj,...args){
 }
 
 
+
 let th = createByobject(lisi,'tanhong')
 th.show();

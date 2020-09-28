@@ -44,6 +44,7 @@ User.prototype = {//2. 覆盖掉原来的
 	}
 }
 
+
 let zhangsan = new User.prototype.constructor("张三")
 let lisi = new User("李四")
 

@@ -13,7 +13,7 @@ console.dir(f1 == f2)
 // f1();
 // f1();
 // f1();
-// 0 9 8 9 01
+// 0 9 8 8 01
 let a = 0
 let b = 0
 // console.log(a=a++)

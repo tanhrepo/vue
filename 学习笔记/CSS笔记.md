@@ -102,3 +102,7 @@ hsl(0,100%,100%)
 1. letter-spacing  //letter-spacing：字符之间的距离  
 		所以选择123
 		
+## 定义周和年的控件
+date 选取日、月、年 month 选取月和年  
+week 选取周和年  
+time 选取时间（小时和分钟）

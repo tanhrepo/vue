@@ -66,8 +66,8 @@ word-break;word-space
 
 ## 以下关于跨域的描述哪些是正确的:
 >1. CSS文件的加载不受跨域限制  
-2. `window.onerror`方法默认情况下无法获取跨域脚本的报错详情  
-3. canvas中使用drawImage贴图会受跨域限制
+>2. `window.onerror`方法默认情况下无法获取跨域脚本的报错详情  
+>3. canvas中使用drawImage贴图会受跨域限制
 后续。。。。
 
 ## 优化滚动性能:

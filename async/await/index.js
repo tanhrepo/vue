@@ -130,4 +130,5 @@ axios().then(function(res){
 	console.log("jieguo",res)
 })
 
+
 // axios就是把发送ajax用promise封装了一下

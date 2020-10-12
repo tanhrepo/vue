@@ -64,48 +64,66 @@
 // })
 
 // Promise和ajax
-let p1 = new Promise(function(resolve,reject){
-	// resolve 是成功的函数
-	// reject  是失败的函数
-	$.ajax({
-		url:"./aaa/aaa.css",
-		success:function(res){
-			// console.log("2");
-			resolve(res)
-		},
-	})
-})
+// let p1 = new Promise(function(resolve,reject){
+// 	// resolve 是成功的函数
+// 	// reject  是失败的函数
+// 	$.ajax({
+// 		url:"./aaa/aaa.css",
+// 		success:function(res){
+// 			// console.log("2");
+// 			resolve(res)
+// 		},
+// 	})
+// })
 
-p1.then(function(res){
-	console.log("成功",res)
-	let p2 = new Promise(function(resolve,reject){
-		// resolve 是成功的函数
-		// reject  是失败的函数
-		$.ajax({
-			url:"./aaa/aaa.css",
-			success:function(res){
-				// console.log("2");
-				resolve(res)
-			},
-		})
-	})
-	return p2;
-}).then(function(res){
-	console.log("cg",res)
-	let p3 = new Promise(function(resolve,reject){
-		// resolve 是成功的函数
-		// reject  是失败的函数
-		$.ajax({
-			url:"./aaa/aaa.css",
-			success:function(res){
-				// console.log("2");
-				resolve(res)
-			},
-		})
-	})
-	return p3;
-}).then(function(res){
-	console.log("cg3",res)
-})
+// p1.then(function(res){
+// 	console.log("成功",res)
+// 	let p2 = new Promise(function(resolve,reject){
+// 		// resolve 是成功的函数
+// 		// reject  是失败的函数
+// 		$.ajax({
+// 			url:"./aaa/aaa.css",
+// 			success:function(res){
+// 				// console.log("2");
+// 				resolve(res)
+// 			},
+// 		})
+// 	})
+// 	return p2;
+// }).then(function(res){
+// 	console.log("cg",res)
+// 	let p3 = new Promise(function(resolve,reject){
+// 		// resolve 是成功的函数
+// 		// reject  是失败的函数
+// 		$.ajax({
+// 			url:"./aaa/aaa.css",
+// 			success:function(res){
+// 				// console.log("2");
+// 				resolve(res)
+// 			},
+// 		})
+// 	})
+// 	return p3;
+// }).then(function(res){
+// 	console.log("cg3",res)
+// })
 //好处 就是没有那么多的嵌套关系，是一个链式编程的结果
+
+// axios
+function axios(){
+	let p1 = new Promise(function(resolve,reject){
+		// resolve 是成功的函数
+		// reject  是失败的函数
+		$.ajax({
+			url:"./aaa/aaa.css",
+			success:function(res){
+				// console.log("2");
+				resolve(res)
+			},
+		})
+	})
+	return p1;
+	// axios返回一个promise
+}
+// axios()  //调用axios函数，得到p1 new 的那个promise
 

@@ -126,4 +126,8 @@ function axios(){
 	// axios返回一个promise
 }
 // axios()  //调用axios函数，得到p1 new 的那个promise
+axios().then(function(res){
+	console.log("jieguo",res)
+})
 
+// axios就是把发送ajax用promise封装了一下

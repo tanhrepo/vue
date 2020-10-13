@@ -147,4 +147,4 @@ document.getElementById("btn").onclick = async()=>{
 	console.log("2点击发送ajax",res);
 }
 
-// async是Generator的语法糖
+// async是Generator的语法糖	

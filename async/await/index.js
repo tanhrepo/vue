@@ -126,9 +126,25 @@ function axios(){
 	// axios返回一个promise
 }
 // axios()  //调用axios函数，得到p1 new 的那个promise
-axios().then(function(res){
-	console.log("jieguo",res)
-})
+// axios().then(function(res){
+// 	console.log("jieguo",res)
+// })
 
 
 // axios就是把发送ajax用promise封装了一下
+//点击发送ajax
+// document.getElementById("btn").onclick = function(){
+// 	axios().then(function(res){
+// 		console.log("点击发送ajax",res);
+// 	})
+// }
+
+// 箭头函数、async 、await
+// async,await最简单的使用 可以省略掉.then 简单快捷
+document.getElementById("btn").onclick = async()=>{
+	let res = await axios();//这里会等待成功，再执行下面的
+	
+	console.log("2点击发送ajax",res);
+}
+
+// async是Generator的语法糖

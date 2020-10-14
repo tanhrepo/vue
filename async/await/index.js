@@ -110,21 +110,21 @@
 //好处 就是没有那么多的嵌套关系，是一个链式编程的结果
 
 // axios
-function axios(){
-	let p1 = new Promise(function(resolve,reject){
-		// resolve 是成功的函数
-		// reject  是失败的函数
-		$.ajax({
-			url:"./aaa/aaa.css",
-			success:function(res){
-				// console.log("2");
-				resolve(res)
-			},
-		})
-	})
-	return p1;
-	// axios返回一个promise
-}
+// function axios(){
+// 	let p1 = new Promise(function(resolve,reject){
+// 		// resolve 是成功的函数
+// 		// reject  是失败的函数
+// 		$.ajax({
+// 			url:"./aaa/aaa.css",
+// 			success:function(res){
+// 				// console.log("2");
+// 				resolve(res)
+// 			},
+// 		})
+// 	})
+// 	return p1;
+// 	// axios返回一个promise
+// }
 // axios()  //调用axios函数，得到p1 new 的那个promise
 // axios().then(function(res){
 // 	console.log("jieguo",res)
@@ -141,12 +141,12 @@ function axios(){
 
 // 箭头函数、async 、await
 // async,await最简单的使用 可以省略掉.then 简单快捷
-document.getElementById("btn").onclick = async()=>{
-	let res1 = await axios();//这里会等待成功，再执行下面的
-	let res2 = await axios();//这里会等待成功，再执行下面的
+// document.getElementById("btn").onclick = async()=>{
+// 	let res1 = await axios();//这里会等待成功，再执行下面的
+// 	let res2 = await axios();//这里会等待成功，再执行下面的
 	
-	console.log("2点击发送ajax",res1,res2);
-}
+// 	console.log("2点击发送ajax",res1,res2);
+// }
 
 // async函数就是Generator函数的语法糖	
 // Generator是ES6提出的异步编程解决方案，语法行为与传统函数完全不同
@@ -168,3 +168,31 @@ document.getElementById("btn").onclick = async()=>{
 // console.log(hw.next())//没有了就返回undefined
 
 // async + await 原理就是Generator + yield
+
+
+
+
+// Promise,Promise.all(),Promise.race();
+
+
+// let p1 = new Promise(function(resolve,reject){
+// 	// resolve 是成功的函数
+// 	// reject  是失败的函数
+// 	$.ajax({
+// 		url:"./aaa/aaa.css",
+// 		success:function(res){
+// 			// console.log("2");
+// 			resolve(res)
+// 		},
+// 	})
+// })
+// p1.then()
+
+// Promise.all([数组],function(第二个参数函数){})
+// Promise.all([p1,p2,p3...],function)
+// Promise.all() 必须数组里面的所有的promise都执行完毕才成功
+// Promise.race([数组],function(第二个参数函数){})
+// Promise.race([p1,p2,p3...],function)
+// Promise.race() 只要数组里面的任何一个promise执行成功了 整个 race就执行了
+
+

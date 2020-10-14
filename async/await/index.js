@@ -147,4 +147,13 @@ document.getElementById("btn").onclick = async()=>{
 	console.log("2点击发送ajax",res);
 }
 
-// async是Generator的语法糖	
+// async函数就是Generator函数的语法糖	
+// Generator是ES6提出的异步编程解决方案，语法行为与传统函数完全不同
+// 形式上，Generator函数是一个普通函数，
+// 但是有两个特征，一是function关键字与函数名之间有一个星号；二是函数体内部使用yield表达式，
+// Generator
+function* helloworldGenerator(){
+	yield 'hello';
+	yield 'world';
+	return 'ending';
+}

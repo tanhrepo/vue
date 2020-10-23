@@ -13,13 +13,8 @@ let data_image = [
 	{x:0,b:6},
 ]
 
+
 let init = () =>{
-	// images[0].children[0].style = 'transform:translate(0px);filter:blur(4px)'
-	// images[1].children[0].style = 'transform:translate(0px);filter:blur(0px)'
-	// images[2].children[0].style = 'transform:translate(0px);filter:blur(1px)'
-	// images[3].children[0].style = 'transform:translate(0px);filter:blur(4px)'
-	// images[4].children[0].style = 'transform:translate(0px);filter:blur(5px)'
-	// images[5].children[0].style = 'transform:translate(0px);filter:blur(6px)'
 	for (let key in images) {
 		if(images.hasOwnProperty(key)){
 			const element = images[key];

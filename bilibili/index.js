@@ -13,7 +13,6 @@ let data_image = [
 	{x:0,b:6},
 ]
 
-
 let init = () =>{
 	for (let key in images) {
 		if(images.hasOwnProperty(key)){

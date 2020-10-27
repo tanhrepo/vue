@@ -23,3 +23,4 @@ D:\home\WebStorm\cqoa\ruoyi-system\target\test-classes
 // 进入代码就会执行完成
 
 // 装饰器是一种函数,写成 @+函数名 .它可以放在类和类方法的定义
+//装饰器

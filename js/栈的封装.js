@@ -1,0 +1,79 @@
+
+// 栈的封装:
+
+// 基于数组
+function Stack(){
+	//栈中得数据
+	this.items = [];
+	
+	// 入栈
+	Stack.prototype.push = function(val){
+		this.items.push(val)
+	}
+	
+	//出栈
+	Stack.prototype.pop = function(){
+		return this.items.pop()
+	}
+	
+	//查看栈顶元素
+	Stack.prototype.peek = function(){
+		return this.items[this.items.length - 1]
+	}
+	
+	// 判断栈是否为空
+	Stack.prototype.isEmpty = function(){
+		return this.items.length === 0
+	}
+	
+	// 获取栈中元素的个数
+	Stack.prototype.size = function(){
+		return this.items.length
+	}
+	
+	//toString方法
+	Stack.prototype.toString = function(){
+		//20 19 28 3 1
+		let resultString = '';
+		for(let i = 0,j = this.items.length;i < j;i++){
+			resultString += this.items[i] + ' '
+		}
+		return resultString
+	}
+}
+
+// 栈的使用
+let s = new Stack();
+console.log(s)
+
+s.push(3)
+s.push(6)
+s.push(88)
+s.push(98)
+console.log(s)
+s.pop()
+console.log(s)
+
+console.log(s.peek())
+console.log(s.isEmpty())
+console.log(s.toString())
+
+// 用栈将十进制转化为二进制
+function DecToBin(DecNum){
+	// 定义栈对象
+	let a = new Stack()
+	while(DecNum > 0){
+		// 1.将余数压入栈顶
+		a.push(DecNum % 2)
+		// 2.整除的结果作为下一次的运行数
+		// Math.floor向下取整
+		DecNum = Math.floor(DecNum / 2)
+	}
+	let BinString = '';
+	while(!a.isEmpty()){
+		BinString += a.pop()
+	}
+	return BinString
+}
+
+console.log(DecToBin(100))

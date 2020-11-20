@@ -5,6 +5,9 @@ for (let i = 2;i < 20;i++){
 	fib[i] = fib[i - 2] + fib[i-1]
 }
 console.log(fib)//[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765]
+
+// 获取数组的长度
+console.log(fib.length)// 20
 // 在数组头部插元素
 for(let j = fib.length;j>0;j--){
 	fib[j] = fib[j - 1 ]

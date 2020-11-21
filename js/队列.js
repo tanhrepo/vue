@@ -59,3 +59,19 @@ console.log(queue.toString())
 // 封装一个基于队列的函数
 // 参数：所有参与人的名字，基于的数字
 // 结果：最终剩下一个人的名字
+
+let line 
+
+while(line = readline()) {
+    const arr = line.split(' ').map(item => parseInt(item))
+    
+    console.log(arr.reduce((a,b) => a + b))
+}
+
+let input;
+while(input = readline()) {
+    let arr = input.split(' ');
+    if (arr.length == 2) {
+        console.log(Number(arr[0]) + Number(arr[1]));
+    }
+} 	

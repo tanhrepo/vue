@@ -10,7 +10,7 @@ function Queue(val){
 	}
 	// 2.从队列中删除元素
 	Queue.prototype.dequeue = function(){
-		this.items.shift()
+		return this.items.shift()
 	}
 	// 3.查看前端的元素
 	Queue.prototype.front = function(){
@@ -36,20 +36,20 @@ function Queue(val){
 }
 
 // 使用队列
-let queue = new Queue()
-// 将元素加入队列
-queue.enqueue(123);
-queue.enqueue('abc');
-queue.enqueue(34);
-queue.enqueue(67);
-console.log(queue)
-// 删除队列前端元素
-queue.dequeue()
-console.log(queue)
-console.log(queue.front())
-console.log(queue.isEmpty())
-console.log(queue.size())
-console.log(queue.toString())
+// let queue = new Queue()
+// // 将元素加入队列
+// queue.enqueue(123);
+// queue.enqueue('abc');
+// queue.enqueue(34);
+// queue.enqueue(67);
+// console.log(queue)
+// // 删除队列前端元素
+// queue.dequeue()
+// console.log(queue)
+// console.log(queue.front())
+// console.log(queue.isEmpty())
+// console.log(queue.size())
+// console.log(queue.toString())
 
 // 击鼓传花
 // 我们来修改一下这个游戏规则.
@@ -60,13 +60,33 @@ console.log(queue.toString())
 // 参数：所有参与人的名字，基于的数字
 // 结果：最终剩下一个人的名字
 function Game(nameList,num){
+	// 1. 创建一个队列结构
 	let queue = new Queue;
-	
-	// 1. 将所有的人放入队列中
+	// console.log(nameList[0])
+	// 2. 将所有的人放入队列中
 	for(let i = 0,j = nameList.length;i<j;i++){
-		
+		queue.enqueue(nameList[i])
 	}
+	
+	// 3. 开始数数字
+	while(queue.size() > 1){
+		// 数到的数不是num的时候,就把这个人放到队列的最后
+		// 是num的时候,就从队列里面删除
+		// 1.
+		for(let i = 0;i < num - 1;i++){
+			queue.enqueue(queue.dequeue())
+		}
+		// 2. 
+		queue.dequeue()
+	}
+	// console.log(queue.size())
+	let endName = queue.front()
+	console.log(endName)
+	return nameList.indexOf(endName)
 }
+
+let name = ['zhang','li','wang','tan','ma','lu','fang']
+Game(name,3)
 
 
 

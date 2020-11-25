@@ -86,7 +86,7 @@ function Game(nameList,num){
 }
 
 let name = ['zhang','li','wang','tan','ma','lu','fang']
-Game(name,3)
+Game(name,3 )
 
 
 

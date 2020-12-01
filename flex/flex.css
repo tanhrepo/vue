@@ -18,7 +18,6 @@ html,body{
 	/* flex-direction: row | row-reverse | column | column-reverse; */
 	/* flex-direction: 水平(默认) | 水平反转 | 垂直 | 垂直反转; */
 
-
 	flex-wrap: wrap;	/* 可换行 */
 	/* flex-wrap: nowrap | wrap | wrap-reverse; */
 	/* flex-wrap: 不换行(默认) | 换行 | 换行,第一行在下方。; */

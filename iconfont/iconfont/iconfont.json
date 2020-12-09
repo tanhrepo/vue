@@ -6,6 +6,76 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "18613260",
+      "name": "epub",
+      "font_class": "epub",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "18613261",
+      "name": "PAGE",
+      "font_class": "PAGE",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "18613262",
+      "name": "TXT",
+      "font_class": "TXT",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "18613263",
+      "name": "RTF",
+      "font_class": "RTF",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "18613264",
+      "name": "HTML",
+      "font_class": "HTML",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "18613265",
+      "name": "pdf",
+      "font_class": "pdf",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "18613266",
+      "name": "word",
+      "font_class": "word",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "18613267",
+      "name": "EXCEL",
+      "font_class": "EXCEL",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "18613268",
+      "name": "PPT",
+      "font_class": "PPT",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "18613269",
+      "name": "XML",
+      "font_class": "XML",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
       "icon_id": "15838478",
       "name": "film",
       "font_class": "film",

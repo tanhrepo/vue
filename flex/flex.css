@@ -1,15 +1,17 @@
-html,body{
+html,
+body {
 	height: 100%;
 }
-.container1{
+
+.container1 {
 	/* 容器6个属性 */
-/* 	flex-direction 主轴的方向
+	/* 	flex-direction 主轴的方向
 	flex-wrap 换行
 	flex-flow 主轴的方向 换行
 	justify-content 主轴上的对齐方式(默认x)
 	align-items 交叉轴上如何对齐(默认y)
 	align-content 多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。 */
-	
+
 	display: flex;
 	width: 80%;
 	height: 1300px;
@@ -18,58 +20,64 @@ html,body{
 	/* flex-direction: row | row-reverse | column | column-reverse; */
 	/* flex-direction: 水平(默认) | 水平反转 | 垂直 | 垂直反转; */
 
-	flex-wrap: wrap;	/* 可换行 */
+	flex-wrap: wrap;
+	/* 可换行 */
 	/* flex-wrap: nowrap | wrap | wrap-reverse; */
 	/* flex-wrap: 不换行(默认) | 换行 | 换行,第一行在下方。; */
-	
-	
+
+
 	/* flex-flow:row-reverse wrap; */
 	/* flex-flow:主轴的方向 换行;(默认值为row nowrap) */
-		
-		
-	justify-content: center;/* 居中,默认的主轴是x轴 */
+
+
+	justify-content: center;
+	/* 居中,默认的主轴是x轴 */
 
 	/* justify-content: flex-start | flex-end | center | space-between | space-around; */
 	/* justify-content: 首 | 尾 | 居中 | 两端对齐，间隔相等 | 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。; */
-	
-	align-items: center;	/* 垂直居中 */
-	
+
+	align-items: center;
+	/* 垂直居中 */
+
 	/* align-items: flex-start | flex-end | center | baseline | stretch; */
 	/* align-items: 首 | 尾 | 居中 | 第一行文字的基线对齐 | 默认(未设置高度或设为auto，将占满整个容器的高度); */
-	
-	
-	align-content: center;	/* 交叉轴的中点对齐。 */
+
+
+	align-content: center;
+	/* 交叉轴的中点对齐。 */
 	/* align-content: flex-start | flex-end | center | space-between | space-around | stretch; */
-	
-	
-	
+
+
+
 	/* align-content: flex-start(与交叉轴的起点对齐) | flex-end(与交叉轴的终点对齐) | center(与交叉轴的中点对齐 ) */
 	/* | space-between(与交叉轴两端对齐，轴线之间的间隔平均分布 ) */
 	/* | space-around(每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍) */
 	/* | stretch(轴线占满整个交叉轴); */
-	
-	
+
+
 }
-.container1 span{
+
+.container1 span {
 	/* 项目上面的6个属性 */
-	
+
 	/* 1、order (项目的排列顺序。数值越小，排列越靠前，默认为0) */
 	/* 2、flex-grow (是否放大,默认为0) */
 	/* 3、flex-shrink (是否缩小,默认为1)*/
 	/* 4、flex-basis (宽度,默认为auto,不受width影响(会使width无效)，会受min-width和max-width影响)*/
-	
+
 	/*/5、flex (flex-grow,flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。)*/
 	/* 该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。 */
-	
+
 	/* 6、align-self */
 	/* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
 	/* 允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。 */
 	/* 默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。 */
-	
+
 	max-width: 400px;
 	height: 200px;
 	margin: 20px 10px;
-	flex: 0 0 300px;	/* flex:是否放大,是否缩小,宽度 */
+	flex: 0 0 300px;
+	/* flex:是否放大,是否缩小,宽度 */
 	background-color: lightcoral;
-	
+
 }

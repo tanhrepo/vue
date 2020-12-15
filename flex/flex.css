@@ -5,7 +5,8 @@ body {
 
 .container1 {
 	/* 容器6个属性 */
-	/* 	flex-direction 主轴的方向
+	/* 	
+	flex-direction 主轴的方向
 	flex-wrap 换行
 	flex-flow 主轴的方向 换行
 	justify-content 主轴上的对齐方式(默认x)

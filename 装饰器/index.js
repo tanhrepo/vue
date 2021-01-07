@@ -7,6 +7,7 @@ D:\home\WebStorm\cqoa\ruoyi-business\target\test-classes
 D:\home\WebStorm\cqoa\ruoyi-common\target\classes
 D:\home\WebStorm\cqoa\ruoyi-common\target\test-classes
 
+
 D:\home\WebStorm\cqoa\ruoyi-framework\target\classes
 D:\home\WebStorm\cqoa\ruoyi-framework\target\test-classes
 

@@ -7,7 +7,6 @@ D:\home\WebStorm\cqoa\ruoyi-business\target\test-classes
 D:\home\WebStorm\cqoa\ruoyi-common\target\classes
 D:\home\WebStorm\cqoa\ruoyi-common\target\test-classes
 
-
 D:\home\WebStorm\cqoa\ruoyi-framework\target\classes
 D:\home\WebStorm\cqoa\ruoyi-framework\target\test-classes
 
@@ -26,3 +25,4 @@ D:\home\WebStorm\cqoa\ruoyi-system\target\test-classes
 
 // 装饰器是一种函数,写成 @+函数名 .它可以放在类和类方法的定义
 //装饰器
+// 哈哈哈,新买了阿米洛的键盘

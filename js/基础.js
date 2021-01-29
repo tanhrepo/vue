@@ -20,20 +20,20 @@
 
 // 比较运算符：> < >= <= == === != !== 
 // Number:String数据和字符串比较   String => Number先将string转化成number
-let a = 1 > '2'
-console.log('a',a) // false
+// let a = 1 > '2'
+// console.log('a',a) // false
 
-let bool1 = 'a' > 'b'
-console.log('bool1',bool1) // false
+// let bool1 = 'a' > 'b'
+// console.log('bool1',bool1) // false
 
-let bool2 = 'a' < 'b'
-console.log('bool2',bool2) // false
+// let bool2 = 'a' < 'b'
+// console.log('bool2',bool2) // false
 
-let b1 = '4.5' < '11'
-console.log('b1',b1)// false
+// let b1 = '4.5' < '11'
+// console.log('b1',b1)// false
 
-let b2 = '4.5' > '11'
-console.log('b2',b2)// false
+// let b2 = '4.5' > '11'
+// console.log('b2',b2)// false
 
 // 字符串的比较都是比较ascll码的大小的
 // 4.5和11的比较， 先用4和1比较，然后.(46)和1(49)等等依次向后比较，4比1大，就没有再向后面比较了
@@ -48,14 +48,43 @@ console.log('b2',b2)// false
 // 假：undefined 、null 、NaN 、"" 、0  、false
 // 真：除了上面这些，全部都为真
 
-let a1 = 1 && 2
-let a2 = 1 || 2
-console.log('a1',a1,'a2',a2)// a1 2 a2 1
+// let a1 = 1 && 2
+// let a2 = 1 || 2
+// console.log('a1',a1,'a2',a2)// a1 2 a2 1
 
-let a3 = 1 && 2 && 0 && 4
+// let a3 = 1 && 2 && 0 && 4
 // && 遇到真就往后走，遇到假或者走到最后就返回当前的值
-let a4 = 0 || 1 ||null
-let a5 = 0 || null || undefined ||false
+// let a4 = 0 || 1 ||null
+// let a5 = 0 || null || undefined ||false
 // || 遇到假就往后走，遇到真或者走到最后就返回当前的值
 
-console.log('a3',a3,'a4',a4,'a5',a5)// a3 0 a4 1 a5 false
+// console.log('a3',a3,'a4',a4,'a5',a5)// a3 0 a4 1 a5 false
+
+// 循环
+// for(let i = 0;i < 10;i++){
+//   console.log('i',i)
+// }
+
+// i 0
+// i 1
+// i 2
+// i 3
+// i 4
+// i 5
+// i 6
+// i 7
+// i 8
+// i 9
+// 可以直接等价于
+// let i = 0;
+// for(;i < 10;){
+//   console.log('i',i);
+//   i++;
+// }
+
+// 这个格式就很熟悉了，和while循环很像了
+// let i = 0;
+// while(i < 10){
+//   console.log('i',i);
+//   i++;
+// }
